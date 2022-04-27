@@ -11,7 +11,6 @@ buildscript{ //프로젝트의 플러그인 의존성 관리
 
     }
 }
-sourceCompatibility = 1.8
 
 //스프링 부트 의존성 관리 필수 플러그인
 apply plugin : 'java'
