@@ -13,14 +13,19 @@ buildscript{ //프로젝트의 플러그인 의존성 관리
 }
 
 //스프링 부트 의존성 관리 필수 플러그인
+/*
 apply plugin : 'java'
 apply plugin : 'eclipse'
 apply plugin : 'org.springframework.boot'
 apply plugin : 'io.spring.dependency-management'
+*/
 
-/*plugins {
+plugins {
     id 'java'
-}*/
+    id 'eclipse'
+    id 'org.springframework.boot'
+    id 'io.spring.dependency-management'
+}
 
 group 'org.example'
 version '1.0-SNAPSHOT'
