@@ -49,19 +49,15 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-oauth2-client'
 
     implementation 'org.springframework.session:spring-session-jdbc'
+    implementation 'org.mariadb.jdbc:mariadb-java-client'
 
-    testImplementation('org.springframework.boot:spring-boot-starter-test'){
-  //      exclude group: 'junit'
-  //      exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
-    }
     testImplementation 'org.springframework.security:spring-security-test'
-
-    // 기본으로 있던 애들
-   // testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.2'
-    // testImplementation 'org.junit.jupiter:junit-vintage-engine:5.7.2'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testImplementation ('org.junit.vintage:junit-vintage-engine'){
         exclude group: "org.hamcrest", module: "hamcrest-core"
     }
+
+
 
 }
 
