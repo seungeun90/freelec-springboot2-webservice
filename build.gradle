@@ -64,3 +64,9 @@ dependencies {
 test {
     useJUnitPlatform()
 }
+
+bootJar{
+    archivesBaseName = 'freelec-springboot2-webservice'
+    archiveFileName = 'freelec-springboot2-webservice.jar'
+    archiveVersion = "0.0.1"
+}
